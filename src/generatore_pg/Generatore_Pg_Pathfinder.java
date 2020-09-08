@@ -10,7 +10,7 @@ package generatore_pg;
  * @author leleg
  */
 import java.util.Random;
-public class Generatore_Pg_DnD_5E{
+public class Generatore_Pg_Pathfinder{
 
     /**
      * @param args the command line arguments
