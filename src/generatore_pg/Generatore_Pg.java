@@ -18,11 +18,11 @@ public class Generatore_Pg {
     public static void main(String[] args) {
       Random random=new Random();
          
-         String[] razze=new String[]{"Elfo","Nano","Orco","Halfling"};
+         String[] razze=new String[]{"Elfo","Halfling","Nano","Umano","Dragonide","Gnomo","Mezzelfo","Mezzorco","Tiefling"};
          String[] allineamenti=new String[]{"Legale Buono","Legale Neutrale","Legale Malvagio",
              "Neutrale Buono","Neutrale Neutrale","Neutrale Malvagio",
          "Caotico Buono","Caotico Neutrale","Caotico malvagio"};
-         String [] Classi=new String[]{"Bardo","Ladro","Cavaliere","Druido"};
+         String [] Classi=new String[]{"Barbaro","Bardo","Chierico","Druido","Guerriero","Ladro","Mago","Monaco","Paladino","Ranger","Stregone","Warlock"};
         int Forza=random.nextInt(19);
         int Carisma=random.nextInt(19);
         int Destrezza=random.nextInt(19);
