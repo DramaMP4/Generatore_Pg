@@ -35,11 +35,11 @@ public class Generatore_Pg {
         System.out.println("Classe : "+Classi[Classe]);
         int Allineamento=random.nextInt(Allineamenti.length);
         System.out.println("Allineamento : "+Allineamenti[Allineamento]);
-        System.out.println("Forza : "+Forza); 
-        System.out.println("Carisma : "+Carisma); 
-        System.out.println("Destrezza : "+Destrezza); 
+        System.out.println("Forza : "+Forza);
+        System.out.println("Destrezza : " + Destrezza);
+        System.out.println("Costituzione: " + Costituzione);
+        System.out.println("Intelligenza : " + Intelligenza);
         System.out.println("Saggezza : "+Saggezza); 
-        System.out.println("Intelligenza : "+Intelligenza); 
-        System.out.println("Costituzione: "+Costituzione); 
+        System.out.println("Carisma : "+Carisma); 
     }
 }
