@@ -18,9 +18,9 @@ public class Generatore_Pg_DnD_5E{
     public static void main(String[] args) {
       Random random=new Random();
          
-        String[] Razze=new String[]{"Elfo","Halfling","Nano","Umano","Dragonide","Gnomo","Mezzelfo","Mezzorco","Tiefling"};
+        String[] Razze=new String[]{"Elfi","Gnomi","Halfling","Mezzorchi","Mezzelfi","Nani","Umani"};
         String[] Allineamenti=new String[]{"Legale Buono","Legale Neutrale","Legale Malvagio","Neutrale Buono","Neutrale Neutrale","Neutrale Malvagio","Caotico Buono","Caotico Neutrale","Caotico malvagio"};
-        String[] Classi=new String[]{"Barbaro","Bardo","Chierico","Druido","Guerriero","Ladro","Mago","Monaco","Paladino","Ranger","Stregone","Warlock"};
+        String[] Classi=new String[]{"Barbaro","Bardo","Chierico","Druido","Guerriero","Ladro","Mago","Monaco","Paladino","Ranger","Stregone"};
         int minimo=10;
         int massimo=20;
         int Forza=random.nextInt(massimo-minimo)+minimo;
