@@ -30,7 +30,7 @@ public class Generatore_Pg {
         int razza=random.nextInt(razze.length);
         System.out.println("Razza : "+razze[razza]);
         int classe=random.nextInt(Classi.length);
-        System.out.println("classe : "+Classi[classe]);
+        System.out.println("Classe : "+Classi[classe]);
         int allineamento=random.nextInt(allineamenti.length);
         System.out.println("Allineamento : "+allineamenti[allineamento]);
         System.out.println("Forza : "+Forza); 
