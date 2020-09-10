@@ -22,6 +22,7 @@ public class Generatore_Pg_DnD_5E{
         String[] Allineamenti=new String[]{"Legale Buono","Legale Neutrale","Legale Malvagio","Neutrale Buono","Neutrale","Neutrale Malvagio","Caotico Buono","Caotico Neutrale","Caotico malvagio"};
         String[] Classi=new String[]{"Barbaro","Bardo","Chierico","Druido","Guerriero","Ladro","Mago","Monaco","Paladino","Ranger","Stregone"};
         String[] Cammini_Barbaro=new String[]{"Cammino del Berserk","Cammino del Combattente Totemico"};
+        String[] Collegio_Bardico=new String[]{"Collegio della Sapienza","Collegio del valore"};
         String[] Archetipi_Ladreschi=new String[]{"Furfante","Assassino","Mistificatore Arcano"};
         String[] Scuole_Magia=new String[]{"Scuola1"};
         String[] Stirpe_Stregone=new String[]{"Stirpe1"};
@@ -33,6 +34,8 @@ public class Generatore_Pg_DnD_5E{
         System.out.println("Allineamento : "+Allineamenti[Allineamento]);
         // Cammino Barbaro
         int Cammino=random.nextInt(Cammini_Barbaro.length);
+        //Collegio Bardico
+        int collegio=random.nextInt(Collegio_Bardico.length);
         //Archetipi Ladro
         int archetipo=random.nextInt(Archetipi_Ladreschi.length);
         //Scuola di Magia
@@ -45,7 +48,7 @@ public class Generatore_Pg_DnD_5E{
         }
         //Random Collegi Bardo
         if(Classe==1){
-            System.out.println("Collegio Bardico : ");
+            System.out.println("Collegio Bardico : "+Collegio_Bardico[collegio]);
         }
         //Random Archetipo Ladro
         if(Classe==5){
