@@ -23,7 +23,7 @@ public class Generatore_Pg_DnD_5E{
         String[] Classi=new String[]{"Barbaro","Bardo","Chierico","Druido","Guerriero","Ladro","Mago","Monaco","Paladino","Ranger","Stregone"};
         String[] Cammini_Barbaro=new String[]{"Cammino del Berserk","Cammino del Combattente Totemico"};
         String[] Collegio_Bardico=new String[]{"Collegio della Sapienza","Collegio del valore"};
-        //
+        //Domini Chierico 
         String[] Archetipi_Ladreschi=new String[]{"Furfante","Assassino","Mistificatore Arcano"};
         String[] Scuole_Magia=new String[]{"Scuola1"};
         String[] Stirpe_Stregone=new String[]{"Stirpe1"};
@@ -33,6 +33,7 @@ public class Generatore_Pg_DnD_5E{
         System.out.println("Classe : "+Classi[Classe]);
         int Allineamento=random.nextInt(Allineamenti.length);
         System.out.println("Allineamento : "+Allineamenti[Allineamento]);
+
         // Cammino Barbaro
         int Cammino=random.nextInt(Cammini_Barbaro.length);
         //Collegio Bardico
@@ -43,6 +44,7 @@ public class Generatore_Pg_DnD_5E{
         int scuola=random.nextInt(Scuole_Magia.length);
         //Stirpe Stregone 
         int stirpe=random.nextInt(Stirpe_Stregone.length);
+
         //Random Cammini Barbaro
         if(Classe==0){
             System.out.println("Cammino Barbaro : "+Cammini_Barbaro[Cammino]);
