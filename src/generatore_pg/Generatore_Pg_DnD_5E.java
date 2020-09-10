@@ -1,26 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package generatore_pg;
 
-/**
- *
- * @author leleg
- */
 import java.util.Random;
 public class Generatore_Pg_DnD_5E{
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
       Random random=new Random();
          
         String[] Razze=new String[]{"Elfo","Gnomo","Halfling","Mezzorco","Mezzelfo","Nano","Umano"};
         String[] Allineamenti=new String[]{"Legale Buono","Legale Neutrale","Legale Malvagio","Neutrale Buono","Neutrale","Neutrale Malvagio","Caotico Buono","Caotico Neutrale","Caotico malvagio"};
-        String[] Classi=new String[]{"Barbaro","Bardo","Chierico","Druido","Guerriero","Ladro","Mago","Monaco","Paladino","Ranger","Stregone"};
+        String[] Classi=new String[]{"Barbaro","Bardo","Chierico","Druido","Guerriero","Ladro","Mago","Monaco","Paladino","Ranger","Stregone","Warlock"};
         String[] Cammini_Barbaro=new String[]{"Cammino del Berserk","Cammino del Combattente Totemico"};
         String[] Collegio_Bardico=new String[]{"Collegio della Sapienza","Collegio del valore"};
         //Domini Chierico 
@@ -55,7 +43,7 @@ public class Generatore_Pg_DnD_5E{
         }
         //Random Archetipo Ladro
         if(Classe==5){
-            System.out.println("Archetipo : "+Archetipi_Ladreschi[archetipo]);
+            System.out.println("Archetipo Ladresco : "+Archetipi_Ladreschi[archetipo]);
         }
         //Random Scuola di Magia 
         if (Classe==6){
@@ -63,9 +51,10 @@ public class Generatore_Pg_DnD_5E{
         }
         //Random Stirpe Stregone
         if(Classe==10){
-            System.out.print("Stirpe : "+Stirpe_Stregone[stirpe]);
+            System.out.print("Origine Stregonesca : "+Stirpe_Stregone[stirpe]);
         }
-        
+
+        /*Creazione Statistiche senza Malus 
         int minimo=10,massimo=20;
         int Forza=random.nextInt(massimo-minimo)+minimo;
         int Carisma= random.nextInt(massimo - minimo) + minimo;
@@ -78,7 +67,7 @@ public class Generatore_Pg_DnD_5E{
         System.out.println("Costituzione: " + Costituzione);
         System.out.println("Intelligenza : " + Intelligenza);
         System.out.println("Saggezza : "+Saggezza); 
-        System.out.println("Carisma : "+Carisma); 
+        System.out.println("Carisma : "+Carisma); */
     }
 }
 
