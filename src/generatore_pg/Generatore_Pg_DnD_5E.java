@@ -13,8 +13,8 @@ public class Generatore_Pg_DnD_5E{
         String[] Collegio_Bardico=new String[]{"Collegio della Sapienza","Collegio del valore"};
         //Domini Chierico 
         String[] Archetipi_Ladreschi=new String[]{"Furfante","Assassino","Mistificatore Arcano"};
-        String[] Scuole_Magia=new String[]{"Scuola1"};
-        String[] Stirpe_Stregone=new String[]{"Stirpe1"};
+        String[] Scuole_Magia=new String[]{""};
+        String[] Stirpe_Stregone=new String[]{""};
         int razza=random.nextInt(Razze.length);
         System.out.println("Razza : "+Razze[razza]);
         int Classe=random.nextInt(Classi.length);
