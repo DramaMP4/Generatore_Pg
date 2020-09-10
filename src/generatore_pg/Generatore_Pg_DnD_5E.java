@@ -23,6 +23,7 @@ public class Generatore_Pg_DnD_5E{
         String[] Classi=new String[]{"Barbaro","Bardo","Chierico","Druido","Guerriero","Ladro","Mago","Monaco","Paladino","Ranger","Stregone"};
         String[] Cammini_Barbaro=new String[]{"Cammino del Berserk","Cammino del Combattente Totemico"};
         String[] Collegio_Bardico=new String[]{"Collegio della Sapienza","Collegio del valore"};
+        //
         String[] Archetipi_Ladreschi=new String[]{"Furfante","Assassino","Mistificatore Arcano"};
         String[] Scuole_Magia=new String[]{"Scuola1"};
         String[] Stirpe_Stregone=new String[]{"Stirpe1"};
