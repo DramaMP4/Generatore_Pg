@@ -58,18 +58,30 @@ public class Generatore_Pg_DnD_5E{
         int patto = random.nextInt(Patti_Warlock.length);
 
         switch(Classe){
-            case 0: System.out.println("Cammino Barbaro : "+Cammini_Barbaro[Cammino]);
+            case 0: System.out.println("Cammino Barbaro : "+Cammini_Barbaro[Cammino]); 
+                break;
             case 1: System.out.println("Collegio Bardico : "+Collegi_Bardico[collegio]);
+                break;
             case 2: System.out.println("Collegio Bardico : " + Domini_Chierico[dominio]);
+                break;
             case 3: System.out.println("Circolo Chierico : " + Circoli_Chierico[circolo]);
+                break;
             case 4: System.out.println("Archetipo Marziale : " + Archetipi_Marziali[archetipo_marziale]);
+                break;
             case 5: System.out.println("Archetipo Ladresco : "+Archetipi_Ladreschi[archetipo]);
+                break;
             case 6: System.out.println("Scuola di Magia : "+Scuole_Magia[scuola]);
+                break;
             case 7:  System.out.println("Via Monastica : " + Vie_Monaco[via]);
+                break;
             case 8: System.out.println("Giuramento Paladino : " + Giuramenti_Paladino[giuramento]);
+                break;
             case 9: System.out.println(" Archetipo Ranger : " + Archetipi_Ranger[archetipo_ranger]);
+                break;
             case 10:  System.out.println("Origine Stregonesca : "+Stirpe_Stregone[stirpe]);
+                break;
             case 11: System.out.println("Vincolo Warlock : " + Patti_Warlock[patto]);
+                break;
         }
         
     }
