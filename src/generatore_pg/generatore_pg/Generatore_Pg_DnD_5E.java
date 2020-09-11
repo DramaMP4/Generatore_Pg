@@ -44,6 +44,10 @@ public class Generatore_Pg_DnD_5E{
         if(Classe==1){
             System.out.println("Collegio Bardico : "+Collegio_Bardico[collegio]);
         }
+        //Random Domini Chierico 
+        if(Classe==2){
+            System.out.println("Collegio Bardico : " + Domini_Chierico[dominio]);
+        }
         //Random Archetipo Ladro
         if(Classe==5){
             System.out.println("Archetipo Ladresco : "+Archetipi_Ladreschi[archetipo]);
