@@ -19,6 +19,7 @@ public class Generatore_Pg_DnD_5E{
         String[] Archetipi_Ladreschi=new String[]{"Furfante","Assassino","Mistificatore Arcano"};
         String[] Scuole_Magia=new String[]{"Scuola1"};
         String[] Vie_Monaco= new String[] {"Via1"};
+        String[] Giuramenti_Paladino=new String[]{};
         String[] Stirpe_Stregone=new String[]{"Stirpe1"};
         int razza=random.nextInt(Razze.length);
         System.out.println("Razza : "+Razze[razza]);
@@ -43,6 +44,8 @@ public class Generatore_Pg_DnD_5E{
         int scuola=random.nextInt(Scuole_Magia.length);
         //Vie Monastiche
         int via = random.nextInt(Vie_Monaco.length);
+        //Giuramenti Monastico
+        int giuramento=random.nextInt(Giuramenti_Paladino.length);
         //Stirpe Stregone 
         int stirpe=random.nextInt(Stirpe_Stregone.length);
 
@@ -79,7 +82,13 @@ public class Generatore_Pg_DnD_5E{
             System.out.println("Via Monastica : " + Vie_Monaco[via]);
         }
         //Giuramenti Paladino
-
+        if (Classe == 8) {
+             System.out.println("Via Monastica : " + Giuramenti_Paladino[giuramento]);
+        }
+        //Random Archetipi Ranger 
+        /*if (Classe == 9) {
+            System.out.println("Archetipo Ranger : " + Vie_Monaco[via]);
+        }*/
         //Random Stirpe Stregone
         if(Classe==10){
             System.out.print("Origine Stregonesca : "+Stirpe_Stregone[stirpe]);
