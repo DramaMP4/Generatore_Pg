@@ -1,27 +1,28 @@
 package generatore_pg;
 
 import java.util.Random;
-
+import java.util.Scanner;
 public class Generatore_Pg_DnD_5E{
 
     public static void main(String[] args) {
       Random random=new Random();
          
-        String[] Razze=new String[]{""};
+        String[] Razze=new String[]{"Elfo","Halfling","Nano","Umano","Dragonide","Gnomo","Mezzelfo","Mezzorco","Tiefling"};
         String[] Allineamenti=new String[]{"Legale Buono","Legale Neutrale","Legale Malvagio","Neutrale Buono","Neutrale","Neutrale Malvagio","Caotico Buono","Caotico Neutrale","Caotico malvagio"};
         String[] Classi=new String[]{"Barbaro","Bardo","Chierico","Druido","Guerriero","Ladro","Mago","Monaco","Paladino","Ranger","Stregone","Warlock"};
         //Creazione Array Archetipi ecc.
         String[] Cammini_Barbaro=new String[]{"Cammino del Berserk","Cammino del Combattente Totemico"};
         String[] Collegio_Bardico=new String[]{"Collegio della Sapienza","Collegio del valore"};
-        String[] Domini_Chierico=new String[]{"Dominio1"};
+        String[] Domini_Chierico=new String[]{"Dominio della Conoscenza","Dominio "};
         String[] Circoli_Chierico = new String[] {"Circolo1"};
         String[] Archetipi_Marziali= new String[] {"Marziale1"};
         String[] Archetipi_Ladreschi=new String[]{"Furfante","Assassino","Mistificatore Arcano"};
         String[] Scuole_Magia=new String[]{"Scuola1"};
         String[] Vie_Monaco= new String[] {"Via1"};
         String[] Giuramenti_Paladino=new String[]{"Giuramento1"};
-        //Ranger 
+        String[] Archetipi_Ranger=new String[]{"Giuramento1"};
         String[] Stirpe_Stregone=new String[]{"Stirpe1"};
+        String[] Patti_Warlock = new String[] {"Giuramento1"};
         int razza=random.nextInt(Razze.length);
         System.out.println("Razza : "+Razze[razza]);
         int Classe=random.nextInt(Classi.length);
@@ -37,7 +38,7 @@ public class Generatore_Pg_DnD_5E{
         int dominio=random.nextInt(Domini_Chierico.length);
         //Circoli Druido
         int circolo = random.nextInt(Circoli_Chierico.length);
-        //Archetipi Marziali
+        //Archetipi Marziali(Guerriero)
         int archetipo_marziale = random.nextInt(Archetipi_Marziali.length);
         //Archetipi Ladro
         int archetipo=random.nextInt(Archetipi_Ladreschi.length);
@@ -45,11 +46,14 @@ public class Generatore_Pg_DnD_5E{
         int scuola=random.nextInt(Scuole_Magia.length);
         //Vie Monastiche
         int via = random.nextInt(Vie_Monaco.length);
-        //Giuramenti Monastico
+        //Giuramenti Paladino
         int giuramento=random.nextInt(Giuramenti_Paladino.length);
+        //Archetipo Ranger
+        int archetipo_ranger = random.nextInt(Archetipi_Ranger.length);
         //Stirpe Stregone 
         int stirpe=random.nextInt(Stirpe_Stregone.length);
-
+        //Patto Warlock
+        int patto = random.nextInt(Patti_Warlock.length);
         //Random Cammini Barbaro
         if(Classe==0){
             System.out.println("Cammino Barbaro : "+Cammini_Barbaro[Cammino]);
@@ -62,7 +66,7 @@ public class Generatore_Pg_DnD_5E{
         if(Classe==2){
             System.out.println("Collegio Bardico : " + Domini_Chierico[dominio]);
         }
-        //Random Circoli 
+        //Random Circoli Chierico
         if (Classe == 3) {
             System.out.println("Circolo Chierico : " + Circoli_Chierico[circolo]);
         }
@@ -86,10 +90,48 @@ public class Generatore_Pg_DnD_5E{
         if (Classe == 8) {
              System.out.println("Giuramento Paladino : " + Giuramenti_Paladino[giuramento]);
         }
+        //Random Archetipo Ranger
+        if (Classe == 9) {
+            System.out.println("Giuramento Paladino : " + Archetipi_Ranger[archetipo_ranger]);
+        }
         //Random Stirpe Stregone
         if(Classe==10){
             System.out.println("Origine Stregonesca : "+Stirpe_Stregone[stirpe]);
         }
+        //Random Patto Warlock
+        if (Classe == 11) {
+            System.out.println("Giuramento Paladino : " + Patti_Warlock[patto]);
+        }
+
+
+        /*
+        Scanner input=new Scanner(System.in);
+        System.out.println("Inserire le Caratteristiche");
+
+
+        int Forza=0,Destrezza=0,Costituzione=0,Intelligenza=0,Saggezza=0,Carisma=0;
+        System.out.println("Forza:");
+        Forza=input.nextInt();
+        System.out.println("Destrezza:");
+        Destrezza=input.nextInt();
+        System.out.println("Costituzione:");
+        Costituzione=input.nextInt();
+        System.out.println("Intelligenza:");
+        Intelligenza=input.nextInt();
+        System.out.println("Saggezza:");
+        Saggezza=input.nextInt();
+        System.out.println("Carisma:");
+        Carisma=input.nextInt();
+        
+        switch(Forza){
+            case 10:
+            System.out.println("Modificatore Forza=+1");
+            case 11:
+            System.out.println("Modificatore Forza=+1");
+            case 12:
+            System.out.println("Modificatore Forza=+2");
+
+        }*/
 
         /*Creazione Statistiche senza Malus 
         int minimo=10,massimo=20;
