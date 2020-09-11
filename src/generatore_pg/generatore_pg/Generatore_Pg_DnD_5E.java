@@ -9,7 +9,7 @@ public class Generatore_Pg_DnD_5E{
         //Creazione Array Razze,Allineamenti,Classi
         String[] Razze=new String[]{"Elfo","Halfling","Nano","Umano","Dragonide","Gnomo","Mezzelfo","Mezzorco","Tiefling"};
         String[] Allineamenti=new String[]{"Legale Buono","Legale Neutrale","Legale Malvagio","Neutrale Buono","Neutrale","Neutrale Malvagio","Caotico Buono","Caotico Neutrale","Caotico malvagio"};
-    String[] Classi=new String[]{"Barbaro","Bardo","Chierico","Druido","Guerriero","Ladro","Mago","Monaco","Paladino","Ranger","Stregone","Warlock"};
+        String[] Classi=new String[]{"Barbaro","Bardo","Chierico","Druido","Guerriero","Ladro","Mago","Monaco","Paladino","Ranger","Stregone","Warlock"};
         //Creazione Array Archetipi ecc.
         String[] Cammini_Barbaro=new String[]{"Cammino del Berserk","Cammino del Combattente Totemico"};
         String[] Collegi_Bardico=new String[]{"Collegio della Sapienza","Collegio del valore"};
@@ -82,8 +82,9 @@ public class Generatore_Pg_DnD_5E{
                 break;
             case 11: System.out.println("Vincolo Warlock : " + Patti_Warlock[patto]);
                 break;
+            default: 
+                System.out.println("Classe non trovata");
         }
-        
     }
 }
 
