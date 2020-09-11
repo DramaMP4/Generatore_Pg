@@ -88,7 +88,7 @@ public class Generatore_Pg_DnD_5E{
         }
         //Random Stirpe Stregone
         if(Classe==10){
-            System.out.print("Origine Stregonesca : "+Stirpe_Stregone[stirpe]);
+            System.out.println("Origine Stregonesca : "+Stirpe_Stregone[stirpe]);
         }
 
         /*Creazione Statistiche senza Malus 
