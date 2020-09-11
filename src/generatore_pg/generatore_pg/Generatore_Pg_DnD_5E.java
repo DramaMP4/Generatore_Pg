@@ -20,9 +20,9 @@ public class Generatore_Pg_DnD_5E{
         String[] Scuole_Magia=new String[]{"Scuola1"};
         String[] Vie_Monaco= new String[] {"Via1"};
         String[] Giuramenti_Paladino=new String[]{"Giuramento1"};
-        String[] Archetipi_Ranger=new String[]{"Ranger11"};
+        String[] Archetipi_Ranger=new String[]{"Ranger1"};
         String[] Stirpe_Stregone=new String[]{"Stirpe1"};
-        String[] Patti_Warlock = new String[] {"Patto1"};
+        String[] Patti_Warlock = new String[] {"Vincolo1"};
 
         //Random Razza,Classe,Allineamento
         int razza=random.nextInt(Razze.length);
