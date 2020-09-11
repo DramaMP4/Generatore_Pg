@@ -10,12 +10,16 @@ public class Generatore_Pg_DnD_5E{
         String[] Razze=new String[]{"Elfo","Gnomo","Halfling","Mezzorco","Mezzelfo","Nano","Umano"};
         String[] Allineamenti=new String[]{"Legale Buono","Legale Neutrale","Legale Malvagio","Neutrale Buono","Neutrale","Neutrale Malvagio","Caotico Buono","Caotico Neutrale","Caotico malvagio"};
         String[] Classi=new String[]{"Barbaro","Bardo","Chierico","Druido","Guerriero","Ladro","Mago","Monaco","Paladino","Ranger","Stregone","Warlock"};
+        //Creazione Array Archetipi ecc.
         String[] Cammini_Barbaro=new String[]{"Cammino del Berserk","Cammino del Combattente Totemico"};
         String[] Collegio_Bardico=new String[]{"Collegio della Sapienza","Collegio del valore"};
         String[] Domini_Chierico=new String[]{"Dominio1"};
+        String[] Circoli_Chierico = new String[] {"Circolo1"};
+        String[] Archetipi_Marziali= new String[] {"Marziale1"};
         String[] Archetipi_Ladreschi=new String[]{"Furfante","Assassino","Mistificatore Arcano"};
-        String[] Scuole_Magia=new String[]{""};
-        String[] Stirpe_Stregone=new String[]{""};
+        String[] Scuole_Magia=new String[]{"Scuola1"};
+        String[] Vie_Monaco= new String[] {"Via1"};
+        String[] Stirpe_Stregone=new String[]{"Stirpe1"};
         int razza=random.nextInt(Razze.length);
         System.out.println("Razza : "+Razze[razza]);
         int Classe=random.nextInt(Classi.length);
@@ -29,10 +33,16 @@ public class Generatore_Pg_DnD_5E{
         int collegio=random.nextInt(Collegio_Bardico.length);
         //Dominio Chierico 
         int dominio=random.nextInt(Domini_Chierico.length);
+        //Circoli Druido
+        int circolo = random.nextInt(Circoli_Chierico.length);
+        //Archetipi Marziali
+        int archetipo_marziale = random.nextInt(Archetipi_Marziali.length);
         //Archetipi Ladro
         int archetipo=random.nextInt(Archetipi_Ladreschi.length);
         //Scuola di Magia
         int scuola=random.nextInt(Scuole_Magia.length);
+        //Vie Monastiche
+        int via = random.nextInt(Vie_Monaco.length);
         //Stirpe Stregone 
         int stirpe=random.nextInt(Stirpe_Stregone.length);
 
@@ -48,6 +58,14 @@ public class Generatore_Pg_DnD_5E{
         if(Classe==2){
             System.out.println("Collegio Bardico : " + Domini_Chierico[dominio]);
         }
+        //Random Circoli 
+        if (Classe == 3) {
+            System.out.println("Circolo Chierico : " + Circoli_Chierico[circolo]);
+        }
+        //Random Archetipo Marziale
+        if (Classe == 4) {
+            System.out.println("Archetipo Marziale : " + Archetipi_Marziali[archetipo_marziale]);
+        }
         //Random Archetipo Ladro
         if(Classe==5){
             System.out.println("Archetipo Ladresco : "+Archetipi_Ladreschi[archetipo]);
@@ -56,6 +74,12 @@ public class Generatore_Pg_DnD_5E{
         if (Classe==6){
             System.out.println("Scuola di Magia : "+Scuole_Magia[scuola]);
         }
+        //Random Via Monaco
+        if (Classe == 7) {
+            System.out.println("Via Monastica : " + Vie_Monaco[via]);
+        }
+        //Giuramenti Paladino
+
         //Random Stirpe Stregone
         if(Classe==10){
             System.out.print("Origine Stregonesca : "+Stirpe_Stregone[stirpe]);
