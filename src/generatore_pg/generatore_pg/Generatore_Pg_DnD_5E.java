@@ -21,7 +21,7 @@ public class Generatore_Pg_DnD_5E{
         String[] Vie_Monaco= new String[] {"Via1"};
         String[] Giuramenti_Paladino=new String[]{"Giuramento1"};
         //Ranger 
-        //String[] Stirpe_Stregone=new String[]{"Stirpe1"};
+        String[] Stirpe_Stregone=new String[]{"Stirpe1"};
         int razza=random.nextInt(Razze.length);
         System.out.println("Razza : "+Razze[razza]);
         int Classe=random.nextInt(Classi.length);
@@ -48,7 +48,7 @@ public class Generatore_Pg_DnD_5E{
         //Giuramenti Monastico
         int giuramento=random.nextInt(Giuramenti_Paladino.length);
         //Stirpe Stregone 
-        //int stirpe=random.nextInt(Stirpe_Stregone.length);
+        int stirpe=random.nextInt(Stirpe_Stregone.length);
 
         //Random Cammini Barbaro
         if(Classe==0){
@@ -86,11 +86,10 @@ public class Generatore_Pg_DnD_5E{
         if (Classe == 8) {
              System.out.println("Giuramento Paladino : " + Giuramenti_Paladino[giuramento]);
         }
-        
-        /*//Random Stirpe Stregone
+        //Random Stirpe Stregone
         if(Classe==10){
             System.out.print("Origine Stregonesca : "+Stirpe_Stregone[stirpe]);
-        }*/
+        }
 
         /*Creazione Statistiche senza Malus 
         int minimo=10,massimo=20;
