@@ -1,4 +1,4 @@
-package generatore_pg;
+package generatore_pg.generatore_pg;
 
 import java.util.Random;
 
