@@ -85,10 +85,6 @@ public class Generatore_Pg_DnD_5E{
         if (Classe == 8) {
              System.out.println("Via Monastica : " + Giuramenti_Paladino[giuramento]);
         }
-        //Random Archetipi Ranger 
-        /*if (Classe == 9) {
-            System.out.println("Archetipo Ranger : " + Vie_Monaco[via]);
-        }*/
         //Random Stirpe Stregone
         if(Classe==10){
             System.out.print("Origine Stregonesca : "+Stirpe_Stregone[stirpe]);
