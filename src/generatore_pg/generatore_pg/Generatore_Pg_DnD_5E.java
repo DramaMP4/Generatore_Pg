@@ -20,6 +20,7 @@ public class Generatore_Pg_DnD_5E{
         String[] Scuole_Magia=new String[]{"Scuola1"};
         String[] Vie_Monaco= new String[] {"Via1"};
         String[] Giuramenti_Paladino=new String[]{"Giuramento1"};
+        //Ranger 
         String[] Stirpe_Stregone=new String[]{"Stirpe1"};
         int razza=random.nextInt(Razze.length);
         System.out.println("Razza : "+Razze[razza]);
