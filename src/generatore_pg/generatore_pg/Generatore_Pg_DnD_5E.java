@@ -9,7 +9,7 @@ public class Generatore_Pg_DnD_5E{
         //Creazione Array Razze,Allineamenti,Classi
         String[] Razze=new String[]{"Elfo","Halfling","Nano","Umano","Dragonide","Gnomo","Mezzelfo","Mezzorco","Tiefling"};
         String[] Allineamenti=new String[]{"Legale Buono","Legale Neutrale","Legale Malvagio","Neutrale Buono","Neutrale","Neutrale Malvagio","Caotico Buono","Caotico Neutrale","Caotico malvagio"};
-        String[] Classi=new String[]{"Barbaro","Bardo","Chierico","Druido","Guerriero","Ladro","Mago","Monaco","Paladino","Ranger","Stregone","Warlock"};
+    String[] Classi=new String[]{"Barbaro","Bardo","Chierico","Druido","Guerriero","Ladro","Mago","Monaco","Paladino","Ranger","Stregone","Warlock"};
         //Creazione Array Archetipi ecc.
         String[] Cammini_Barbaro=new String[]{"Cammino del Berserk","Cammino del Combattente Totemico"};
         String[] Collegi_Bardico=new String[]{"Collegio della Sapienza","Collegio del valore"};
@@ -56,54 +56,22 @@ public class Generatore_Pg_DnD_5E{
         int stirpe=random.nextInt(Stirpe_Stregone.length);
         //Patto Warlock
         int patto = random.nextInt(Patti_Warlock.length);
-        //Random Cammini Barbaro
-        if(Classe==0){
-            System.out.println("Cammino Barbaro : "+Cammini_Barbaro[Cammino]);
+
+        switch(Classe){
+            case 0: System.out.println("Cammino Barbaro : "+Cammini_Barbaro[Cammino]);
+            case 1: System.out.println("Collegio Bardico : "+Collegi_Bardico[collegio]);
+            case 2: System.out.println("Collegio Bardico : " + Domini_Chierico[dominio]);
+            case 3: System.out.println("Circolo Chierico : " + Circoli_Chierico[circolo]);
+            case 4: System.out.println("Archetipo Marziale : " + Archetipi_Marziali[archetipo_marziale]);
+            case 5: System.out.println("Archetipo Ladresco : "+Archetipi_Ladreschi[archetipo]);
+            case 6: System.out.println("Scuola di Magia : "+Scuole_Magia[scuola]);
+            case 7:  System.out.println("Via Monastica : " + Vie_Monaco[via]);
+            case 8: System.out.println("Giuramento Paladino : " + Giuramenti_Paladino[giuramento]);
+            case 9: System.out.println(" Archetipo Ranger : " + Archetipi_Ranger[archetipo_ranger]);
+            case 10:  System.out.println("Origine Stregonesca : "+Stirpe_Stregone[stirpe]);
+            case 11: System.out.println("Vincolo Warlock : " + Patti_Warlock[patto]);
         }
-        //Random Collegi Bardo
-        if(Classe==1){
-            System.out.println("Collegio Bardico : "+Collegi_Bardico[collegio]);
-        }
-        //Random Domini Chierico 
-        if(Classe==2){
-            System.out.println("Collegio Bardico : " + Domini_Chierico[dominio]);
-        }
-        //Random Circoli Chierico
-        if (Classe == 3) {
-            System.out.println("Circolo Chierico : " + Circoli_Chierico[circolo]);
-        }
-        //Random Archetipo Marziale
-        if (Classe == 4) {
-            System.out.println("Archetipo Marziale : " + Archetipi_Marziali[archetipo_marziale]);
-        }
-        //Random Archetipo Ladro
-        if(Classe==5){
-            System.out.println("Archetipo Ladresco : "+Archetipi_Ladreschi[archetipo]);
-        }
-        //Random Scuola di Magia 
-        if (Classe==6){
-            System.out.println("Scuola di Magia : "+Scuole_Magia[scuola]);
-        }
-        //Random Via Monaco
-        if (Classe == 7) {
-            System.out.println("Via Monastica : " + Vie_Monaco[via]);
-        }
-        //Giuramenti Paladino
-        if (Classe == 8) {
-             System.out.println("Giuramento Paladino : " + Giuramenti_Paladino[giuramento]);
-        }
-        //Random Archetipo Ranger
-        if (Classe == 9) {
-            System.out.println(" Archetipo Ranger : " + Archetipi_Ranger[archetipo_ranger]);
-        }
-        //Random Stirpe Stregone
-        if(Classe==10){
-            System.out.println("Origine Stregonesca : "+Stirpe_Stregone[stirpe]);
-        }
-        //Random Patto Warlock
-        if (Classe == 11) {
-            System.out.println("Vincolo Warlock : " + Patti_Warlock[patto]);
-        }
+        
     }
 }
 
