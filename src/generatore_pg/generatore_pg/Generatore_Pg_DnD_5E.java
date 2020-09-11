@@ -1,7 +1,6 @@
 package generatore_pg;
 
 import java.util.Random;
-import java.util.Scanner;
 
 public class Generatore_Pg_DnD_5E{
 
