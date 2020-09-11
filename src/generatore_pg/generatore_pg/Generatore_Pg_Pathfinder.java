@@ -13,6 +13,15 @@ public class Generatore_Pg_Pathfinder{
                 "Caotico Neutrale", "Caotico malvagio"};
         String[] Classi = new String[] {"Barbaro", "Bardo", "Chierico", "Druido", "Guerriero",
                 "Ladro", "Mago", "Monaco", "Paladino", "Ranger", "Stregone", "Warlock"};
+        
+        int razza = random.nextInt(Razze.length);
+        System.out.println("Razza : " + Razze[razza]);
+        int Classe = random.nextInt(Classi.length);
+        System.out.println("Classe : " + Classi[Classe]);
+        int Allineamento = random.nextInt(Allineamenti.length);
+        System.out.println("Allineamento : " + Allineamenti[Allineamento]);
+        
+        /*
         int minimo = 10;
         int massimo = 20;
         int Forza = random.nextInt(massimo - minimo) + minimo;
@@ -21,17 +30,11 @@ public class Generatore_Pg_Pathfinder{
         int Saggezza = random.nextInt(massimo - minimo) + minimo;
         int Intelligenza = random.nextInt(massimo - minimo) + minimo;
         int Costituzione = random.nextInt(massimo - minimo) + minimo;
-        int razza = random.nextInt(Razze.length);
-        System.out.println("Razza : " + Razze[razza]);
-        int Classe = random.nextInt(Classi.length);
-        System.out.println("Classe : " + Classi[Classe]);
-        int Allineamento = random.nextInt(Allineamenti.length);
-        System.out.println("Allineamento : " + Allineamenti[Allineamento]);
         System.out.println("Forza : " + Forza);
         System.out.println("Destrezza : " + Destrezza);
         System.out.println("Costituzione: " + Costituzione);
         System.out.println("Intelligenza : " + Intelligenza);
         System.out.println("Saggezza : " + Saggezza);
-        System.out.println("Carisma : " + Carisma);
+        System.out.println("Carisma : " + Carisma);*/
     }
 }
