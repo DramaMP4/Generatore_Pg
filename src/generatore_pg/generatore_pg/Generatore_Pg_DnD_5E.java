@@ -1,6 +1,7 @@
 package generatore_pg;
 
 import java.util.Random;
+
 public class Generatore_Pg_DnD_5E{
 
     public static void main(String[] args) {
@@ -11,7 +12,7 @@ public class Generatore_Pg_DnD_5E{
         String[] Classi=new String[]{"Barbaro","Bardo","Chierico","Druido","Guerriero","Ladro","Mago","Monaco","Paladino","Ranger","Stregone","Warlock"};
         String[] Cammini_Barbaro=new String[]{"Cammino del Berserk","Cammino del Combattente Totemico"};
         String[] Collegio_Bardico=new String[]{"Collegio della Sapienza","Collegio del valore"};
-        //Domini Chierico 
+        String[] Domini_Chierico=new String[]{};
         String[] Archetipi_Ladreschi=new String[]{"Furfante","Assassino","Mistificatore Arcano"};
         String[] Scuole_Magia=new String[]{""};
         String[] Stirpe_Stregone=new String[]{""};
@@ -26,6 +27,8 @@ public class Generatore_Pg_DnD_5E{
         int Cammino=random.nextInt(Cammini_Barbaro.length);
         //Collegio Bardico
         int collegio=random.nextInt(Collegio_Bardico.length);
+        //Dominio Chierico 
+        int dominio=random.nextInt(Domini_Chierico.length);
         //Archetipi Ladro
         int archetipo=random.nextInt(Archetipi_Ladreschi.length);
         //Scuola di Magia
