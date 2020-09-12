@@ -13,16 +13,16 @@ public class Generatore_Pg_DnD_5E{
         //Creazione Array Archetipi ecc.
         String[] Cammini_Barbaro=new String[]{"Cammino del Berserk","Cammino del Combattente Totemico"};
         String[] Collegi_Bardico=new String[]{"Collegio della Sapienza","Collegio del valore"};
-        String[] Domini_Chierico=new String[]{"Dominio della Conoscenza","Dominio "};
-        String[] Circoli_Chierico = new String[] {"Circolo1"};
-        String[] Archetipi_Marziali= new String[] {"Marziale1"};
+        String[] Domini_Chierico=new String[]{"Dominio della Conoscenza","Dominio della Guerra","Dominio dell'Inganno","Dominio della Luce ","Dominio della Natura","Dominio della Tempesta","Dominio della Vita"};
+        String[] Circoli_Chierico = new String[] {"Circolo della Terra","Circolo della Luna"};
+        String[] Archetipi_Marziali= new String[] {"Campione","Maestro di Battaglia","Cavaliere Mistico"};
         String[] Archetipi_Ladreschi=new String[]{"Furfante","Assassino","Mistificatore Arcano"};
-        String[] Scuole_Magia=new String[]{"Scuola1"};
-        String[] Vie_Monaco= new String[] {"Via1"};
-        String[] Giuramenti_Paladino=new String[]{"Giuramento1"};
-        String[] Archetipi_Ranger=new String[]{"Ranger1"};
-        String[] Stirpe_Stregone=new String[]{"Stirpe1"};
-        String[] Patti_Warlock = new String[] {"Vincolo1"};
+        String[] Scuole_Magia=new String[]{"Scuola di Abiiurazione","Scuola di Ammaliamento","Scuola di Divinazione","Scuola di Evocazione","Scuola di Invocazione","Scuola di Necromanzia","Scuola di Trasmutazione"};
+        String[] Vie_Monaco= new String[] {"Via della Mano Aperta","Via dei quattro Elementi"};
+        String[] Giuramenti_Paladino=new String[]{"Giuramento di Devozione","Giuramento degli antichi","Giuramento di Vendetta"};
+        String[] Archetipi_Ranger=new String[]{"Cacciatore","Signore delle Bestie"};
+        String[] Stirpe_Stregone=new String[]{"Discendenza Draconica","Magia Selvaggia"};
+        String[] Patti_Warlock = new String[] {"Il Signore Fatato","L'Immondo","Il Grande Antico"};
 
         //Random Razza,Classe,Allineamento
         int razza=random.nextInt(Razze.length);
