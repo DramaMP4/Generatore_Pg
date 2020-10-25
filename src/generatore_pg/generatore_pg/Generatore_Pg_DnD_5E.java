@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class Generatore_Pg_DnD_5E{
 
     public static void main(String[] args) {
-      Random random=new Random();
+        Scanner input=new Scanner(System.in);
+        Random random=new Random();
         //Creazione Array Razze,Allineamenti,Classi
         String[] Razze=new String[]{"Elfo","Halfling","Nano","Umano","Dragonide","Gnomo","Mezzelfo","Mezzorco","Tiefling"};
         String[] Allineamenti=new String[]{"Legale Buono","Legale Neutrale","Legale Malvagio","Neutrale Buono","Neutrale","Neutrale Malvagio","Caotico Buono","Caotico Neutrale","Caotico malvagio"};
@@ -23,9 +24,6 @@ public class Generatore_Pg_DnD_5E{
         String[] Archetipi_Ranger=new String[]{"Cacciatore","Signore delle Bestie"};
         String[] Stirpe_Stregone=new String[]{"Discendenza Draconica","Magia Selvaggia"};
         String[] Patti_Warlock = new String[] {"Il Signore Fatato","L'Immondo","Il Grande Antico"};
-        //Lista incantesimi Bardo per LVL
-        String[] BardoLVL0=new String[]{"","",""};
-
         //Random Razza,Classe,Allineamento
         int razza=random.nextInt(Razze.length);
         System.out.println("Razza : "+Razze[razza]);
@@ -59,34 +57,56 @@ public class Generatore_Pg_DnD_5E{
         //Patto Warlock
         int patto = random.nextInt(Patti_Warlock.length);
 
-        switch(Classe){
-            case 0: System.out.println("Cammino Barbaro : "+Cammini_Barbaro[Cammino]); 
-                break;
-            case 1: System.out.println("Collegio Bardico : "+Collegi_Bardico[collegio]);
-                break;
-            case 2: System.out.println("Collegio Bardico : " + Domini_Chierico[dominio]);
-                break;
-            case 3: System.out.println("Circolo Chierico : " + Circoli_Chierico[circolo]);
-                break;
-            case 4: System.out.println("Archetipo Marziale : " + Archetipi_Marziali[archetipo_marziale]);
-                break;
-            case 5: System.out.println("Archetipo Ladresco : "+Archetipi_Ladreschi[archetipo]);
-                break;
-            case 6: System.out.println("Scuola di Magia : "+Scuole_Magia[scuola]);
-                break;
-            case 7:  System.out.println("Via Monastica : " + Vie_Monaco[via]);
-                break;
-            case 8: System.out.println("Giuramento Paladino : " + Giuramenti_Paladino[giuramento]);
-                break;
-            case 9: System.out.println(" Archetipo Ranger : " + Archetipi_Ranger[archetipo_ranger]);
-                break;
-            case 10:  System.out.println("Origine Stregonesca : "+Stirpe_Stregone[stirpe]);
-                break;
-            case 11: System.out.println("Vincolo Warlock : " + Patti_Warlock[patto]);
-                break;
-            default: 
-                System.out.println("Classe non trovata");
+        System.out.println("Inserire il lvl della classe\n");
+        int lvl=input.nextInt();
+
+        if(lvl>=3){
+
+            switch (Classe) {
+                case 0:
+                    System.out.println("Cammino Barbaro : " + Cammini_Barbaro[Cammino]);
+                    break;
+                case 1:
+                    System.out.println("Collegio Bardico : " + Collegi_Bardico[collegio]);
+                    break;
+                case 2:
+                    System.out.println("Collegio Bardico : " + Domini_Chierico[dominio]);
+                    break;
+                case 3:
+                    System.out.println("Circolo Chierico : " + Circoli_Chierico[circolo]);
+                    break;
+                case 4:
+                    System.out.println(
+                            "Archetipo Marziale : " + Archetipi_Marziali[archetipo_marziale]);
+                    break;
+                case 5:
+                    System.out.println("Archetipo Ladresco : " + Archetipi_Ladreschi[archetipo]);
+                    break;
+                case 6:
+                    System.out.println("Scuola di Magia : " + Scuole_Magia[scuola]);
+                    break;
+                case 7:
+                    System.out.println("Via Monastica : " + Vie_Monaco[via]);
+                    break;
+                case 8:
+                    System.out.println("Giuramento Paladino : " + Giuramenti_Paladino[giuramento]);
+                    break;
+                case 9:
+                    System.out.println(" Archetipo Ranger : " + Archetipi_Ranger[archetipo_ranger]);
+                    break;
+                case 10:
+                    System.out.println("Origine Stregonesca : " + Stirpe_Stregone[stirpe]);
+                    break;
+                case 11:
+                    System.out.println("Vincolo Warlock : " + Patti_Warlock[patto]);
+                    break;
+                default:
+                    System.out.println("Classe non trovata");
+
+
+            }
         }
+        
 
         
     }
