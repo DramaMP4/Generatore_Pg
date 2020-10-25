@@ -8,7 +8,7 @@ public class Generatore_Pg_DnD_5E{
         Scanner input=new Scanner(System.in);
         Random random=new Random();
         //Creazione Array Razze,Allineamenti,Classi
-        String[] Razze=new String[]{"Elfo","Halfling","Nano","Umano","Dragonide","Gnomo","Mezzelfo","Mezzorco","Tiefling"};
+    String[] Razze=new String[]{"Elfo","Halfling"/*,"Nano","Umano","Dragonide","Gnomo","Mezzelfo","Mezzorco","Tiefling"*/};
         String[] Allineamenti=new String[]{"Legale Buono","Legale Neutrale","Legale Malvagio","Neutrale Buono","Neutrale","Neutrale Malvagio","Caotico Buono","Caotico Neutrale","Caotico malvagio"};
         String[] Classi=new String[]{"Barbaro","Bardo","Chierico","Druido","Guerriero","Ladro","Mago","Monaco","Paladino","Ranger","Stregone","Warlock"};
         //Creazione Array Archetipi ecc.
@@ -26,16 +26,21 @@ public class Generatore_Pg_DnD_5E{
         String[] Patti_Warlock = new String[] {"Il Signore Fatato","L'Immondo","Il Grande Antico"};
         //Creazione Array Sottorazze 
         String[] SottoRazze_Elfo = new String[] {"Alto", "Dei Boschi", "Oscuro(Drow)"};
-        String[] Sottorazze_Halfilng=new String[] {};
+        String[] Sottorazze_Halfling=new String[] {"Piedelesto","Tozzo"};
         //Random Razza,Classe,Allineamento
         int razza=random.nextInt(Razze.length);
         System.out.println("Razza : "+Razze[razza]);
+
+        int sottorazza_elfo = random.nextInt(SottoRazze_Elfo.length);
+        int sottorazza_halfling = random.nextInt(Sottorazze_Halfling.length);
+
         switch(razza){
             case 0:
-                int sottorazza_elfo = random.nextInt(SottoRazze_Elfo.length);
-                System.out.println("Razza : " + SottoRazze_Elfo[sottorazza_elfo]);
+                System.out.println("Sottorazza : " + SottoRazze_Elfo[sottorazza_elfo]);
                 break;
             case 1:
+                System.out.println("Sottorazza : " + Sottorazze_Halfling[sottorazza_halfling]);
+                break;
         }
         
         int Classe=random.nextInt(Classi.length);
