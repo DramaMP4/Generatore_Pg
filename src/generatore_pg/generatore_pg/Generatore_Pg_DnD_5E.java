@@ -24,9 +24,20 @@ public class Generatore_Pg_DnD_5E{
         String[] Archetipi_Ranger=new String[]{"Cacciatore","Signore delle Bestie"};
         String[] Stirpe_Stregone=new String[]{"Discendenza Draconica","Magia Selvaggia"};
         String[] Patti_Warlock = new String[] {"Il Signore Fatato","L'Immondo","Il Grande Antico"};
+        //Creazione Array Sottorazze 
+        String[] SottoRazze_Elfo = new String[] {"Alto", "Dei Boschi", "Oscuro(Drow)"};
+        String[] Sottorazze_Halfilng=new String[] {};
         //Random Razza,Classe,Allineamento
         int razza=random.nextInt(Razze.length);
         System.out.println("Razza : "+Razze[razza]);
+        switch(razza){
+            case 0:
+                int sottorazza_elfo = random.nextInt(SottoRazze_Elfo.length);
+                System.out.println("Razza : " + SottoRazze_Elfo[sottorazza_elfo]);
+                break;
+            case 1:
+        }
+        
         int Classe=random.nextInt(Classi.length);
         System.out.println("Classe : "+Classi[Classe]);
         int Allineamento=random.nextInt(Allineamenti.length);
@@ -57,7 +68,7 @@ public class Generatore_Pg_DnD_5E{
         //Patto Warlock
         int patto = random.nextInt(Patti_Warlock.length);
 
-        System.out.println("Inserire il lvl della classe\n");
+        System.out.println("Inserire il lvl della classe");
         int lvl=input.nextInt();
 
         if(lvl>=3&&lvl<=20){
@@ -101,7 +112,10 @@ public class Generatore_Pg_DnD_5E{
                 default:
                     System.out.println("Classe non trovata");
             }
-            System.out.print("Livello inserito troppo alto");
+            
+        }else
+        {
+            System.out.println("Livello troppo basso o tropppo alto per avere una sottoclasse");
         }
     }
 }
