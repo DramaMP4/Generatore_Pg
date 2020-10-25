@@ -138,6 +138,7 @@ public class Generatore_Pg_DnD_5E{
             System.out.println("Livello troppo basso o troppo alto \n Ricorda il livelli vanno da 1 a 20 ");
         }
 
+        Background b=new Background();
         
     }
 
