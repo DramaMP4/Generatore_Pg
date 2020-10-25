@@ -60,8 +60,7 @@ public class Generatore_Pg_DnD_5E{
         System.out.println("Inserire il lvl della classe\n");
         int lvl=input.nextInt();
 
-        if(lvl>=3){
-
+        if(lvl>=3&&lvl<=20){
             switch (Classe) {
                 case 0:
                     System.out.println("Cammino Barbaro : " + Cammini_Barbaro[Cammino]);
@@ -102,11 +101,8 @@ public class Generatore_Pg_DnD_5E{
                 default:
                     System.out.println("Classe non trovata");
             }
+            System.out.print("Livello inserito troppo alto");
         }
-
-        
-
-        
     }
 }
 
