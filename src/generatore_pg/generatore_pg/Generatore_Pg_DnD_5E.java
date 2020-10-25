@@ -139,7 +139,7 @@ public class Generatore_Pg_DnD_5E{
         }
 
         Background b=new Background();
-        
+        System.out.println("Background : " + b);
     }
 
 }
