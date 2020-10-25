@@ -18,7 +18,7 @@ public class Generatore_Pg_DnD_5E{
         String[] Circoli_Chierico = new String[] {"Circolo della Terra","Circolo della Luna"};
         String[] Archetipi_Marziali= new String[] {"Campione","Maestro di Battaglia","Cavaliere Mistico"};
         String[] Archetipi_Ladreschi=new String[]{"Furfante","Assassino","Mistificatore Arcano"};
-        String[] Scuole_Magia=new String[]{"Scuola di Abiiurazione","Scuola di Ammaliamento","Scuola di Divinazione","Scuola di Evocazione","Scuola di Invocazione","Scuola di Necromanzia","Scuola di Trasmutazione"};
+        String[] Scuole_Magia=new String[]{"Scuola di Abiurazione","Scuola di Ammaliamento","Scuola di Divinazione","Scuola di Evocazione","Scuola di Invocazione","Scuola di Necromanzia","Scuola di Trasmutazione"};
         String[] Vie_Monaco= new String[] {"Via della Mano Aperta","Via dei quattro Elementi"};
         String[] Giuramenti_Paladino=new String[]{"Giuramento di Devozione","Giuramento degli antichi","Giuramento di Vendetta"};
         String[] Archetipi_Ranger=new String[]{"Cacciatore","Signore delle Bestie"};
