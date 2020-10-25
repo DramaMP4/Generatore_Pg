@@ -36,7 +36,7 @@ public class Generatore_Pg_DnD_5E{
         int sottorazza_elfo = random.nextInt(SottoRazze_Elfo.length);
         int sottorazza_halfling = random.nextInt(Sottorazze_Halfling.length);
         int sottorazze_nano=random.nextInt(Sottorazze_Nano.length);
-        
+
         switch(razza){
             case 0:
                 System.out.println("Sottorazza : " + SottoRazze_Elfo[sottorazza_elfo]);
@@ -46,6 +46,10 @@ public class Generatore_Pg_DnD_5E{
                 break;
             case 2:
                 System.out.println("Sottorazza : "+ Sottorazze_Nano[sottorazze_nano]);
+                break;
+                default:
+                System.out.println("Culo"); 
+                break;
 
         }
         
