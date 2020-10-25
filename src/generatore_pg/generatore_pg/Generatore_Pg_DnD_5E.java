@@ -131,7 +131,7 @@ public class Generatore_Pg_DnD_5E{
             
         }else
         {
-            System.out.println("Livello troppo basso o tropppo alto per avere una sottoclasse");
+            System.out.println("Livello troppo basso o troppo alto per avere una sottoclasse\n Ricorda il livelli vanno da 1 a 20 ");
         }
     }
 }
