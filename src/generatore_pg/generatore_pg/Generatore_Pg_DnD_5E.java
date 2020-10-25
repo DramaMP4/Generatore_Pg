@@ -29,21 +29,21 @@ public class Generatore_Pg_DnD_5E{
         String[] Sottorazze_Halfling=new String[] {"Piedelesto","Tozzo"};
         String[] Sottorazze_Nano=new String[]{"Sgrodolo","Sgredolo"};
         String[] Sottorazze_Umano=new String[]{"Puxlax","Stroglox"};
-        
+
         //Random Razza,Classe,Allineamento
         int razza=random.nextInt(Razze.length);
         System.out.println("Razza : "+Razze[razza]);
-
-        int sottorazza_elfo = random.nextInt(Sottorazze_Elfo.length);
-        int sottorazza_halfling = random.nextInt(Sottorazze_Halfling.length);
+        //Random Sottorazza
+        int sottorazze_elfo = random.nextInt(Sottorazze_Elfo.length);
+        int sottorazze_halfling = random.nextInt(Sottorazze_Halfling.length);
         int sottorazze_nano=random.nextInt(Sottorazze_Nano.length);
         int sottorazze_umano=random.nextInt(Sottorazze_Umano.length);
         switch(razza){
             case 0:
-                System.out.println("Sottorazza " + Sottorazze_Elfo[sottorazza_elfo]);
+                System.out.println("Sottorazza " + Sottorazze_Elfo[sottorazze_elfo]);
                 break;
             case 1:
-                System.out.println("Sottorazza : " + Sottorazze_Halfling[sottorazza_halfling]);
+                System.out.println("Sottorazza : " + Sottorazze_Halfling[sottorazze_halfling]);
                 break;
             case 2:
                 System.out.println("Sottorazza : "+ Sottorazze_Nano[sottorazze_nano]);
