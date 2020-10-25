@@ -8,7 +8,7 @@ public class Generatore_Pg_DnD_5E{
         Scanner input=new Scanner(System.in);
         Random random=new Random();
         //Creazione Array Razze,Allineamenti,Classi
-    String[] Razze=new String[]{"Elfo","Halfling","Nano"/*,"Umano","Dragonide","Gnomo","Mezzelfo","Mezzorco","Tiefling"*/};
+    String[] Razze=new String[]{"Elfo","Halfling","Nano","Umano"/*,"Dragonide","Gnomo","Mezzelfo","Mezzorco","Tiefling"*/};
         String[] Allineamenti=new String[]{"Legale Buono","Legale Neutrale","Legale Malvagio","Neutrale Buono","Neutrale","Neutrale Malvagio","Caotico Buono","Caotico Neutrale","Caotico malvagio"};
         String[] Classi=new String[]{"Barbaro","Bardo","Chierico","Druido","Guerriero","Ladro","Mago","Monaco","Paladino","Ranger","Stregone","Warlock"};
         //Creazione Array Archetipi ecc.
@@ -28,7 +28,7 @@ public class Generatore_Pg_DnD_5E{
         String[] Sottorazze_Elfo = new String[] {"Alto", "Dei Boschi", "Oscuro(Drow)"};
         String[] Sottorazze_Halfling=new String[] {"Piedelesto","Tozzo"};
         String[] Sottorazze_Nano=new String[]{"Sgrodolo","Sgredolo"};
-        String[] Sottorazze_Umano=new String[]{"Puxlax","Stroglox"}
+        String[] Sottorazze_Umano=new String[]{"Puxlax","Stroglox"};
         //Random Razza,Classe,Allineamento
         int razza=random.nextInt(Razze.length);
         System.out.println("Razza : "+Razze[razza]);
