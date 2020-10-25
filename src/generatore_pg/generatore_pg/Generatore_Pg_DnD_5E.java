@@ -70,14 +70,13 @@ public class Generatore_Pg_DnD_5E{
                     System.out.println("Collegio Bardico : " + Collegi_Bardico[collegio]);
                     break;
                 case 2:
-                    System.out.println("Collegio Bardico : " + Domini_Chierico[dominio]);
+                    System.out.println("Dominio Chierico : " + Domini_Chierico[dominio]);
                     break;
                 case 3:
                     System.out.println("Circolo Chierico : " + Circoli_Chierico[circolo]);
                     break;
                 case 4:
-                    System.out.println(
-                            "Archetipo Marziale : " + Archetipi_Marziali[archetipo_marziale]);
+                    System.out.println("Archetipo Marziale : " + Archetipi_Marziali[archetipo_marziale]);
                     break;
                 case 5:
                     System.out.println("Archetipo Ladresco : " + Archetipi_Ladreschi[archetipo]);
@@ -106,6 +105,7 @@ public class Generatore_Pg_DnD_5E{
 
             }
         }
+
         
 
         
