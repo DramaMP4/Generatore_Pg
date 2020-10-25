@@ -47,7 +47,7 @@ public class Generatore_Pg_DnD_5E{
             case 2:
                 System.out.println("Sottorazza : "+ Sottorazze_Nano[sottorazze_nano]);
                 break;
-            case 3;
+            case 3:
                 System.out.println("Sottrazza "+ Sottorazze_Umano[sottorazze_umano]);
                 break;
 
