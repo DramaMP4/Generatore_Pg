@@ -101,8 +101,6 @@ public class Generatore_Pg_DnD_5E{
                     break;
                 default:
                     System.out.println("Classe non trovata");
-
-
             }
         }
 
