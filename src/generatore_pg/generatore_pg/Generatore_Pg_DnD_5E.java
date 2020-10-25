@@ -1,7 +1,7 @@
 package generatore_pg;
 
 import java.util.Random;
-
+import java.util.Scanner;
 public class Generatore_Pg_DnD_5E{
 
     public static void main(String[] args) {
@@ -23,6 +23,8 @@ public class Generatore_Pg_DnD_5E{
         String[] Archetipi_Ranger=new String[]{"Cacciatore","Signore delle Bestie"};
         String[] Stirpe_Stregone=new String[]{"Discendenza Draconica","Magia Selvaggia"};
         String[] Patti_Warlock = new String[] {"Il Signore Fatato","L'Immondo","Il Grande Antico"};
+        //Lista incantesimi Bardo per LVL
+        String[] BardoLVL0=new String[]{"","",""};
 
         //Random Razza,Classe,Allineamento
         int razza=random.nextInt(Razze.length);
