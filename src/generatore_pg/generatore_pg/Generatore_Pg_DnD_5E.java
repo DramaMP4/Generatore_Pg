@@ -89,7 +89,8 @@ public class Generatore_Pg_DnD_5E{
         int patto = random.nextInt(Patti_Warlock.length);
 
         System.out.println("Inserire il lvl della classe");
-        int lvl=input.nextInt();
+        int lvl = input.nextInt();
+        
 
         if(lvl>=3&&lvl<=20){
             switch (Classe) {
@@ -139,8 +140,8 @@ public class Generatore_Pg_DnD_5E{
         }
 
         Background b=new Background();
+        System.out.println("Background: " + b);
         
-        System.out.println("Vincolo Warlock : " + b);
     }
 
 }
