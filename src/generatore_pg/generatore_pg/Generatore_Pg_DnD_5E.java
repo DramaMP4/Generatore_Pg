@@ -40,7 +40,7 @@ public class Generatore_Pg_DnD_5E{
         int sottorazze_umano=random.nextInt(Sottorazze_Umano.length);
         switch(razza){
             case 0:
-                System.out.println("Sottorazza " + Sottorazze_Elfo[sottorazze_elfo]);
+                System.out.println("Sottorazza : " + Sottorazze_Elfo[sottorazze_elfo]);
                 break;
             case 1:
                 System.out.println("Sottorazza : " + Sottorazze_Halfling[sottorazze_halfling]);
