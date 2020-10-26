@@ -43,6 +43,8 @@ public class Generatore_Pg_DnD_5E{
         int sottorazze_nano=random.nextInt(Sottorazze_Nano.length);
         int sottorazze_umano=random.nextInt(Sottorazze_Umano.length);
         int sottorazze_dragonide=random.nextInt(Sottorazze_Dragonide.length);
+        int sottorazze_mezzelfo=random.nextInt(Sottorazze_Mezzelfo.length);
+        
         switch(razza){
             case 0:
                 System.out.println("Sottorazza : " + Sottorazze_Elfo[sottorazze_elfo]);
