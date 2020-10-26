@@ -8,7 +8,7 @@ public class Generatore_Pg_DnD_5E{
         Scanner input=new Scanner(System.in);
         Random random=new Random();
         //Creazione Array Razze,Allineamenti,Classi
-    String[] Razze=new String[]{"Elfo","Halfling","Nano","Umano"/*,"Dragonide","Gnomo","Mezzelfo","Mezzorco","Tiefling"*/};
+    String[] Razze=new String[]{"Elfo","Halfling","Nano","Umano","Dragonide","Gnomo","Mezzelfo","Mezzorco","Tiefling"};
         String[] Allineamenti=new String[]{"Legale Buono","Legale Neutrale","Legale Malvagio","Neutrale Buono","Neutrale","Neutrale Malvagio","Caotico Buono","Caotico Neutrale","Caotico malvagio"};
         String[] Classi=new String[]{"Barbaro","Bardo","Chierico","Druido","Guerriero","Ladro","Mago","Monaco","Paladino","Ranger","Stregone","Warlock"};
         //Creazione Array Archetipi ecc.
@@ -42,6 +42,7 @@ public class Generatore_Pg_DnD_5E{
         int sottorazze_halfling = random.nextInt(Sottorazze_Halfling.length);
         int sottorazze_nano=random.nextInt(Sottorazze_Nano.length);
         int sottorazze_umano=random.nextInt(Sottorazze_Umano.length);
+        int sottorazze_dragonide=random.nextInt(Sottorazze_Dragonide.length);
         switch(razza){
             case 0:
                 System.out.println("Sottorazza : " + Sottorazze_Elfo[sottorazze_elfo]);
@@ -55,6 +56,10 @@ public class Generatore_Pg_DnD_5E{
             case 3:
                 System.out.println("Sottrazza "+ Sottorazze_Umano[sottorazze_umano]);
                 break;
+            case 4:
+                System.out.println("Sottrazza " + Sottorazze_Dragonide[sottorazze_dragonide]);
+                break;
+            case 5:
 
             default:
             System.out.println("Culo"); 
