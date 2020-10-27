@@ -43,8 +43,10 @@ public class Generatore_Pg_DnD_5E{
         int sottorazze_nano=random.nextInt(Sottorazze_Nano.length);
         int sottorazze_umano=random.nextInt(Sottorazze_Umano.length);
         int sottorazze_dragonide=random.nextInt(Sottorazze_Dragonide.length);
+        int sottorazze_gnomo=random.nextInt(Sottorazze_Gnomo.length);
         int sottorazze_mezzelfo=random.nextInt(Sottorazze_Mezzelfo.length);
-        
+        int sottorazze_mezzorco=random.nextInt(Sottorazze_Mezzorco.length);
+        int sottorazze_tiefling=random.nextInt(Sottorazze_Tiefling.length);
         switch(razza){
             case 0:
                 System.out.println("Sottorazza : " + Sottorazze_Elfo[sottorazze_elfo]);
@@ -62,7 +64,17 @@ public class Generatore_Pg_DnD_5E{
                 System.out.println("Sottrazza " + Sottorazze_Dragonide[sottorazze_dragonide]);
                 break;
             case 5:
-
+                System.out.println("Sottrazza " + Sottorazze_Gnomo[sottorazze_gnomo]);
+                break;
+            case 6:
+                System.out.println("Sottrazza " + Sottorazze_Mezzelfo[sottorazze_mezzelfo]);
+                break;
+            case 7:
+                System.out.println("Sottrazza " + Sottorazze_Mezzorco[sottorazze_mezzorco]);
+                break;
+            case 8:
+                System.out.println("Sottrazza " + Sottorazze_Tiefling[sottorazze_tiefling]);
+                break;
             default:
             System.out.println("Culo"); 
             break;
