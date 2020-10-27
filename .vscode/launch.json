@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Incantesimi",
+            "request": "launch",
+            "mainClass": "Incantesimi",
+            "projectName": "Generatore_Pg_f34eb033"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}"
