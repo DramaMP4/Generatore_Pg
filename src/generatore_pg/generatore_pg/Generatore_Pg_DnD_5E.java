@@ -27,13 +27,13 @@ public class Generatore_Pg_DnD_5E{
         //Creazione Array Sottorazze 
         String[] Sottorazze_Elfo = new String[] {"Alto", "Dei Boschi", "Oscuro(Drow)"};
         String[] Sottorazze_Halfling=new String[] {"Piedelesto","Tozzo"};
-        String[] Sottorazze_Nano=new String[]{"Sgrodolo","Sgredolo"};
-        String[] Sottorazze_Umano=new String[]{"Puxlax","Stroglox"};
+        String[] Sottorazze_Nano=new String[]{"delle Colline","della Montagne"};
+        String[] Sottorazze_Umano=new String[]{"Normale","Alternativo"};
         String[] Sottorazze_Dragonide=new String[]{"Pumax","Fasrox"};
-        String[] Sottorazze_Gnomo=new String[]{"Sfreglox","Leptox"};
-        String[] Sottorazze_Mezzelfo=new String[]{};
-        String[] Sottorazze_Mezzorco=new String[]{};
-        String[] Sottorazze_Tiefling=new String[]{};
+        String[] Sottorazze_Gnomo=new String[]{"delle Foreste","delle Rocce"};
+        String[] Sottorazze_Mezzelfo=new String[]{"Puresclobox"};
+        String[] Sottorazze_Mezzorco=new String[]{"Strefogloc"};
+        String[] Sottorazze_Tiefling=new String[]{"GRIMMSNARL"};
         //Random Razza,Classe,Allineamento
         int razza=random.nextInt(Razze.length);
         System.out.println("Razza : "+Razze[razza]);
