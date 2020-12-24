@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Generatore_Pg_DnD_5E",
+            "request": "launch",
+            "mainClass": "generatore_pg.Generatore_Pg_DnD_5E",
+            "projectName": "Generatore_Pg_f5d06898"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Incantesimi",
             "request": "launch",
             "mainClass": "Incantesimi",
