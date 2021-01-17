@@ -159,7 +159,7 @@ public class Generatore_Pg_DnD_5E{
             
         }else
         {
-            System.out.println("Livello troppo basso per avere una sottoclasse \n Ricorda il livello per la sottoclasse è 3 ");
+            System.out.println("Livello troppo basso per avere una sottoclasse \n Ricorda il livello minimo per avere una sottoclasse è 3 ");
         }
         
     }
