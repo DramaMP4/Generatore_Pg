@@ -1,5 +1,5 @@
 # Generatore_Pg
 
-Un Generatore di Pg per D&D,Pathfinder
-Per cambiare il Gioco cambiare la branch master è Dn5e Generatore Pathfinder come da nome Pathfinder
+Un Generatore di Pg per D&D 5e
+Le razzi classi e sottoclassi sono prese solo ed esclusivamente dal PHB
 
