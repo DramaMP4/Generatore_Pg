@@ -4,20 +4,9 @@ import java.util.Random;
 import java.util.Scanner;
 public class Generatore_Pg_DnD_5E{
 
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        Random random = new Random();
-        String[] Gruppi = new String[] { "Gruppo A", "Gruppo B", "Gruppo C","Gruppo D", "Gruppo E","Gruppo F"};
-        String nome = input.nextLine();
-        int gruppo = random.nextInt(Gruppi.length);
-        int gruppo2 = random.nextInt(Gruppi.length);
-        int gruppo3 = random.nextInt(Gruppi.length);
-        System.out.println(nome + " Gruppo: " + Gruppi[gruppo] + " Gruppo: " + Gruppi[gruppo2] + " Gruppo: "
-                + Gruppi[gruppo3]);
-        input.close();
-    }
-}
-   /* public static void main(String[] args) {
+   
+
+   public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
         Random random=new Random();
         //Creazione Array Razze,Allineamenti,Classi
@@ -174,9 +163,9 @@ public class Generatore_Pg_DnD_5E{
         {
             System.out.println("Livello troppo basso per avere una sottoclasse \n Ricorda il livello minimo per avere una sottoclasse è 3 ");
         }
-        
+        input.close();
     }
-input.close();
-}*/
+
+}
 
 
