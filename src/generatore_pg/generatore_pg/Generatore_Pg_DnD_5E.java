@@ -12,7 +12,7 @@ public class Generatore_Pg_DnD_5E{
         int gruppo = random.nextInt(Gruppi.length);
         int gruppo2 = random.nextInt(Gruppi.length);
         int gruppo3 = random.nextInt(Gruppi.length);
-        System.out.println(nome + "Gruppo: " + Gruppi[gruppo] + "Gruppo: " + Gruppi[gruppo2] + "Gruppo: "
+        System.out.println(nome + " Gruppo: " + Gruppi[gruppo] + " Gruppo: " + Gruppi[gruppo2] + " Gruppo: "
                 + Gruppi[gruppo3]);
         input.close();
     }
