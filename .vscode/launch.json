@@ -9,6 +9,13 @@
             "name": "Launch Generatore_Pg_DnD_5E",
             "request": "launch",
             "mainClass": "generatore_pg.Generatore_Pg_DnD_5E",
+            "projectName": "Generatore_Pg_20046284"
+        },
+        {
+            "type": "java",
+            "name": "Launch Generatore_Pg_DnD_5E",
+            "request": "launch",
+            "mainClass": "generatore_pg.Generatore_Pg_DnD_5E",
             "projectName": "Generatore_Pg_f5d06898"
         },
         {
