@@ -5,6 +5,15 @@ import java.util.Scanner;
 public class Generatore_Pg_DnD_5E{
 
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        Random random = new Random();
+        String[] Gruppi = new String[] { "Gruppo A 'Scout'" };
+        String nome = input.nextLine();
+        int gruppo = random.nextInt(Gruppi.length);
+        System.out.println(nome + "Gruppo: " + Gruppi[gruppo]);
+    }
+}
+   /* public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
         Random random=new Random();
         //Creazione Array Razze,Allineamenti,Classi
@@ -164,5 +173,6 @@ public class Generatore_Pg_DnD_5E{
         
     }
 
-}
+}*/
+
 
