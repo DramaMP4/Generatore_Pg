@@ -11,6 +11,7 @@ public class Generatore_Pg_DnD_5E{
         String nome = input.nextLine();
         int gruppo = random.nextInt(Gruppi.length);
         System.out.println(nome + "Gruppo: " + Gruppi[gruppo]);
+        input.close();
     }
 }
    /* public static void main(String[] args) {
@@ -172,7 +173,7 @@ public class Generatore_Pg_DnD_5E{
         }
         
     }
-
+input.close();
 }*/
 
 
