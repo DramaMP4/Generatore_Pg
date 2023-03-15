@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Generatore_Pg_DnD_5E",
+            "request": "launch",
+            "mainClass": "generatore_pg.Generatore_Pg_DnD_5E",
+            "projectName": "Generatore_Pg_382fef28"
+        },
+        {
+            "type": "java",
             "name": "Launch Generatore_Pg_DnD_5E",
             "request": "launch",
             "mainClass": "generatore_pg.Generatore_Pg_DnD_5E",
